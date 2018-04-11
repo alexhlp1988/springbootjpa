@@ -39,4 +39,11 @@ public class MovieServiceImpl implements MovieService {
     public Optional<Movie> findById(Integer id) {
         return movieRepository.findById(id);
     }
+
+    @Override
+    public List<Movie> findByParam(String name) {
+        return movieRepository.findByParam(name);
+    }
+
+
 }

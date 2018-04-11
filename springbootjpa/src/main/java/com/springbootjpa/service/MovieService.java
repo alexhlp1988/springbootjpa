@@ -11,4 +11,5 @@ public interface MovieService {
     void deleteById(Integer id);
     List<Movie> findAll();
     Optional<Movie> findById(Integer id);
+    List<Movie> findByParam(String name);
 }
